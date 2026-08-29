@@ -288,7 +288,7 @@ img {
 
 .project-image.placeholder {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   background: var(--muted);
   color: var(--muted-foreground);
@@ -385,6 +385,100 @@ img {
 .form textarea:focus {
   outline: 2px solid var(--primary);
   outline-offset: 1px;
+}
+
+/* ---------- Contact Page ---------- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-form-grid .full {
+  grid-column: 1 / -1;
+}
+
+.contact-side h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.contact-side > p {
+  color: var(--muted-foreground);
+  margin-bottom: 32px;
+}
+
+.info-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.info-icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--muted);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-item h4 {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.info-item p {
+  font-size: 14px;
+  color: var(--muted-foreground);
+}
+
+.side-cta-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  margin-top: 16px;
+}
+
+.side-cta-card h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.side-cta-card p {
+  font-size: 14px;
+  color: var(--muted-foreground);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---------- Utilities ---------- */

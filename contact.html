@@ -22,46 +22,116 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <a href="audit.html" class="btn btn-primary btn-sm">Free Audit</a>
+      <a href="audit.html" class="btn btn-primary btn-sm">Free Website Audit</a>
     </div>
   </header>
 
   <main>
-    <section class="section">
+    <section class="hero grid-lines">
       <div class="container">
         <p class="eyebrow">Contact</p>
-        <h1>Let's build something.</h1>
-        <p class="section-lead">Tell me about your project and I'll get back to you within 24 hours.</p>
+        <h1>Let's build something great.</h1>
+        <p class="lead">Tell me about your project, your challenges, and what you're trying to achieve. I'll get back to you within 24 hours.</p>
+      </div>
+    </section>
 
-        <form class="form" action="mailto:you@example.com" method="post" enctype="text/plain">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+    <section class="section">
+      <div class="container contact-grid">
+
+        <div class="contact-card">
+          <form class="contact-form-grid" action="mailto:you@example.com" method="post" enctype="text/plain">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+            </div>
+            <div class="full">
+              <label for="service">What do you need help with?</label>
+              <select id="service" name="service">
+                <option>WordPress Development</option>
+                <option>Shopify Development</option>
+                <option>Website Optimization</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="full">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, goals, and timeline…" required></textarea>
+            </div>
+            <div class="full">
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message &rarr;</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-side">
+          <h2>Other ways to connect</h2>
+          <p>Prefer email or a quick call? Here's how to reach me directly.</p>
+
+          <div class="info-item">
+            <div class="info-icon">✉</div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@khushboo.example</p>
+            </div>
           </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+
+          <div class="info-item">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Response Time</h4>
+              <p>Within 24 hours, Monday to Friday.</p>
+            </div>
           </div>
-          <div>
-            <label for="service">What do you need?</label>
-            <select id="service" name="service">
-              <option>WordPress Development</option>
-              <option>Shopify Development</option>
-              <option>Website Optimization</option>
-              <option>Something else</option>
-            </select>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Remote · Available worldwide</p>
+            </div>
           </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+
+          <div class="side-cta-card">
+            <h3>Not ready to start yet?</h3>
+            <p>Get a free website audit first. It's the easiest way to understand what's holding your site back.</p>
+            <a href="audit.html" class="text-link">Claim your free audit &rarr;</a>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+        </div>
+
       </div>
     </section>
   </main>
 
   <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Khushboo<span>.</span>Shrivastava</a>
+        <p>WordPress &amp; Shopify Developer helping businesses build, improve, and optimize professional websites and online stores.</p>
+      </div>
+      <div>
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="audit.html">Free Audit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="container footer-bottom">
       <p>&copy; 2026 Khushboo Shrivastava. All rights reserved.</p>
       <p>Built to generate clients.</p>
