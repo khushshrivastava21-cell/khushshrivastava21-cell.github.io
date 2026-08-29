@@ -387,6 +387,42 @@ img {
   outline-offset: 1px;
 }
 
+/* ---------- About Page ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-copy p {
+  color: var(--muted-foreground);
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.about-copy p:last-of-type {
+  margin-bottom: 0;
+}
+
+.facts-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.facts-card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- Contact Page ---------- */
 .contact-grid {
   display: grid;
