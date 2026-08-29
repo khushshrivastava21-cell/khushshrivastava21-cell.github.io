@@ -288,7 +288,7 @@ img {
 
 .project-image.placeholder {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   background: var(--muted);
   color: var(--muted-foreground);
