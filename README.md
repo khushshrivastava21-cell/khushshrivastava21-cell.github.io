@@ -1,4 +1,4 @@
-# Dev.Studio — Static Website
+# Khushboo Shrivastava — Static Website
 
 A simple HTML + CSS portfolio website for a WordPress & Shopify developer. No frameworks, no build step — just plain HTML and CSS files you can host anywhere.
 

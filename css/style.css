@@ -1,5 +1,5 @@
 /* ============================================
-   Dev.Studio — WordPress & Shopify Developer
+   Khushboo Shrivastava — WordPress & Shopify Developer
    Simple static site stylesheet
    ============================================ */
 
@@ -293,6 +293,22 @@ img {
   background: var(--muted);
   color: var(--muted-foreground);
   font-size: 14px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.project-image.placeholder:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.project p:last-child a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.project p:last-child a:hover {
+  text-decoration: underline;
 }
 
 .project-category {
