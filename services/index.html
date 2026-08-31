@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Khushboo Shrivastava</title>
+  <meta name="description" content="WordPress development, Shopify development, and website optimization services for growing businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@0,8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="/" class="logo">Khushboo<span class="mark">.</span>Shrivastava</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/services/" class="active">Services</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="/contact/" class="btn btn-amber btn-sm">Start a project</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>What I can do for you.</h1>
+        <p class="lead">Every service is scoped around one goal: a website that brings you more customers.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cap-grid">
+          <div class="cap-item">
+            <h3>WordPress Development</h3>
+            <ul>
+              <li>Custom theme development</li>
+              <li>Website redesign</li>
+              <li>Responsive design</li>
+              <li>Elementor &amp; custom builders</li>
+              <li>WooCommerce stores</li>
+              <li>Speed optimization</li>
+              <li>Bug fixing &amp; maintenance</li>
+            </ul>
+          </div>
+          <div class="cap-item">
+            <h3>Shopify Development</h3>
+            <ul>
+              <li>Shopify store development</li>
+              <li>Theme customization</li>
+              <li>Custom Liquid sections</li>
+              <li>Responsive design</li>
+              <li>Product page optimization</li>
+              <li>Store redesign</li>
+              <li>Shopify maintenance</li>
+            </ul>
+          </div>
+          <div class="cap-item">
+            <h3>Website Optimization</h3>
+            <ul>
+              <li>SEO audit</li>
+              <li>Technical SEO</li>
+              <li>On-page SEO</li>
+              <li>Website speed</li>
+              <li>Mobile optimization</li>
+              <li>Conversion optimization</li>
+            </ul>
+          </div>
+        </div>
+        <p class="center mt-40"><a href="/pricing/" class="btn btn-outline-light">See pricing</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo">Khushboo<span class="mark">.</span>Shrivastava</a>
+        <p>WordPress &amp; Shopify Developer helping businesses build, improve, and optimize professional websites and online stores.</p>
+      </div>
+      <div>
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Khushboo Shrivastava. All rights reserved.</p>
+      <p>Built to generate clients.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        navToggle.classList.toggle('open', isOpen);
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          navToggle.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>

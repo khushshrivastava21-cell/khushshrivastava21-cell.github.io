@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Khushboo Shrivastava</title>
+  <meta name="description" content="Khushboo Shrivastava — WordPress & Shopify Developer with 10+ years of experience and 400+ websites delivered." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="/" class="logo">Khushboo<span class="mark">.</span>Shrivastava</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/about/" class="active">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a href="/contact/" class="btn btn-amber btn-sm">Start a project</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>The person behind the blueprint.</h1>
+        <p class="lead">I'm a WordPress &amp; Shopify developer focused on helping businesses build websites that actually work — fast, reliable, and designed to convert visitors into customers.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p>
+            WordPress &amp; Shopify Developer with 10+ years of experience and 400+ websites delivered.
+            I build, customize and optimize professional business websites and e-commerce stores,
+            including custom themes, functionality, WooCommerce, Shopify, responsive development,
+            website performance and SEO corrections. Available for freelance projects, agency
+            collaborations and long-term partnerships.
+          </p>
+          <p>
+            Over the years, I've worked with brands across e-commerce, professional services, and creative
+            industries. My approach combines clean technical execution with a practical understanding of
+            what makes a website successful: speed, clarity, and trust.
+          </p>
+          <p>
+            I focus on clean code, fast load times, and designs that turn visitors into customers.
+            Whether you need a brand-new store, a redesign, or ongoing maintenance, I can help.
+          </p>
+          <p>
+            When I'm not building websites, I'm sharpening my SEO and digital marketing skills so I can
+            offer even more value to my clients.
+          </p>
+          <div class="mt-40">
+            <a href="/contact/" class="btn btn-amber">Work With Me</a>
+          </div>
+        </div>
+
+        <div class="plate plate-light facts-plate">
+          <div class="tick-tr"></div>
+          <div class="tick-br"></div>
+          <h3>At a glance</h3>
+          <ul class="check-list">
+            <li>10+ years of experience</li>
+            <li>400+ websites delivered</li>
+            <li>WordPress &amp; Shopify development</li>
+            <li>Custom themes &amp; storefronts</li>
+            <li>Performance &amp; SEO optimization</li>
+            <li>Remote · Available worldwide</li>
+            <li>Response within 24 hours</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo">Khushboo<span class="mark">.</span>Shrivastava</a>
+        <p>WordPress &amp; Shopify Developer helping businesses build, improve, and optimize professional websites and online stores.</p>
+      </div>
+      <div>
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="/services/">Services</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Khushboo Shrivastava. All rights reserved.</p>
+      <p>Built to generate clients.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        navToggle.classList.toggle('open', isOpen);
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('open');
+          navToggle.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>
