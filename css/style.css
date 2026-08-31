@@ -494,7 +494,7 @@ p { margin: 0; }
 
 /* ---------- CTA band ---------- */
 .cta-band {
-  background: var(--ink);
+  background: #19243a;
   color: #fff;
   padding: 80px 0;
   text-align: left;
